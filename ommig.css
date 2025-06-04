@@ -1,0 +1,25 @@
+.section-wrapper {
+  position: relative;
+}
+
+.ommigbaggrund {
+  position: absolute;
+  z-index: 0;
+}
+
+.content-on-top {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+}
+
+.ommig1 {
+  text-align: center;
+  padding-top: 32px;
+  margin-left: 26px;
+  color: #ffffff;
+}
+
+.ommig2 {
+  margin-right: 100px;
+}
