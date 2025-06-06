@@ -15,6 +15,12 @@
   src: url(../fonter/Source_Sans_3/);
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fffbf5;
+}
 .navbar {
   display: none;
   list-style: none;
@@ -64,6 +70,7 @@ header {
 main {
   background-color: #fffbf5;
   font-family: font1;
+  color: #404148;
 }
 h1 {
   font-family: font1;
@@ -85,7 +92,21 @@ h3 {
   text-align: center;
   font-size: 21px;
   color: #47484f;
+  margin: 2.5rem;
+  margin-top: 3.5rem;
 }
+
+.svg-img {
+  position: relative;
+  width: 200px;
+}
+
+.linkt2 {
+  position: absolute;
+  top: 120px;
+  left: 60px;
+}
+
 img {
   object-fit: cover;
   max-width: 100%;
@@ -112,14 +133,41 @@ img {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 10rem;
+  margin-bottom: 2rem;
   line-height: 1.7rem;
   padding: 1.5rem;
   border-radius: 23px;
   border: #c8b8e0 solid 7px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   text-align: center;
 }
+
+.logocontainer {
+  border: 1px solid black;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* increase spacing between icons */
+
+  align-items: center;
+}
+.logos img {
+  width: 30px; /* or smaller if needed */
+  height: auto;
+  display: inline-block;
+}
+
+.logos img {
+  max-height: 30px;
+  width: auto;
+}
+
 .togv {
   font-family: font2;
   text-align: center;
@@ -141,6 +189,7 @@ img {
 }
 
 .box1 {
+  margin-top: 1.5rem;
   border: #ebd9c6 solid 7px;
   background-color: rgba(235, 217, 198, 0.48);
   border-radius: 23px;
@@ -158,13 +207,12 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 .bubblest2 {
-  position: absolute;
-  width: 75px;
-  top: 958px;
-  right: 200px;
-  z-index: 300px;
-  object-fit: cover;
+  width: 80px;
+  display: inline-block;
+  margin-left: 150px;
+  margin-bottom: -4rem;
 }
 .grid {
   border: #d1c4e5 solid 6px;
@@ -206,7 +254,16 @@ footer {
   margin-top: 2rem;
 }
 
+.tema3pic1 {
+  position: absolute;
+  width: 60px;
+  top: 103px;
+  right: 355px;
+  z-index: 300px;
+}
+
 .box1-t3 {
+  margin-top: 1.5rem;
   border: #dd8e6f solid 7px;
   background-color: rgba(221, 142, 111, 0.18);
   border-radius: 23px;
@@ -272,13 +329,10 @@ footer {
 }
 
 .box1-t4 {
+  margin-top: 1.5rem;
   border-radius: 23px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   border: #f28f85 solid 7px;
   background-color: rgba(242, 149, 140, 0.17);
   border-radius: 23px;
@@ -330,7 +384,85 @@ footer {
 }
 .kklt4 {
   border: #f28f85 solid 7px;
-  background-color: rgba(242, 149, 140, 0.17);
+  background-color: #f0e8f1;
+  border-radius: 23px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: rgba(242, 149, 140, 0.17);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-family: font1;
+}
+
+.box1-t5 {
+  margin-top: 1.5rem;
+  border-radius: 23px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: #d9cbeb solid 7px;
+  background-color: #f0e8f1;
+  border-radius: 23px;
+  color: #47484f;
+}
+.tema5pic1 {
+  position: absolute;
+  width: 90px;
+  top: 110px;
+  right: 320px;
+  z-index: 300px;
+}
+
+.lottietext {
+  border: #acd2b5 solid 6px;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.t5bubbles3 {
+  width: 90px;
+  margin-left: 150px;
+  margin-bottom: -4rem;
+}
+.virktext {
+  border: #d1c4e5 solid 6px;
+  border-radius: 20px;
+  margin-top: 4.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.gizmo {
+  width: 210px;
+  margin-left: 2rem;
+}
+
+.gittext {
+  border: #f3aaa2 solid 6px;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.kkltema5 {
+  border: #d9cbeb solid 7px;
+  background-color: #f0e8f1;
   border-radius: 23px;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -345,12 +477,14 @@ footer {
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 45px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 
   .i1 {
     margin-left: 20rem;
     margin-right: 20rem;
-    margin-top: 10rem;
+    margin-top: 4rem;
     line-height: 2rem;
     padding: 3.5rem;
     border-radius: 19px;
