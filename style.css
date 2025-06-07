@@ -29,7 +29,7 @@ body {
   align-items: center;
   gap: 10px;
   padding: 0;
-  size: 40px;
+  font-size: 40px;
   margin: 0;
   background-color: #6fafeb;
   font-family: font2, sans-serif;
@@ -474,11 +474,18 @@ footer {
   font-family: font1;
 }
 
-@media screen and (min-width: 700px) {
+/* MOBILE FIRST styles */
+.togv {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* DESKTOP styles */
+@media screen and (min-width: 800px) {
   h1 {
-    font-size: 45px;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    font-size: 50px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
   }
 
   .i1 {
@@ -491,7 +498,70 @@ footer {
     font-size: 18px;
   }
 
-  .index1 {
-    margin-left: -9rem;
+  .togv {
+    margin-left: 450px;
+    margin-right: 500px;
+  }
+
+  .gridtext1 {
+    vertical-align: bottom;
+  }
+  .tema2pic1 {
+    position: absolute;
+    width: 120px;
+    top: 140px;
+    right: 995px;
+  }
+
+  .kkltema2,
+  .kkltema3,
+  .kkltema4,
+  .kkltema5 {
+    max-width: 500px;
+    margin: auto;
+    padding: 3rem;
+  }
+
+  .bubblest2 {
+    width: 150px;
+    margin: auto;
+  }
+
+  .grid-wrapper {
+    gap: 3rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .indiv-grid {
+    gap: 2rem;
+    align-items: start; /* ensures right column starts at top */
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .left-text {
+    padding: 2rem;
+    height: 60%;
+    align-self: center;
+    padding-right: 2.5rem;
+    line-height: 2rem;
+  }
+
+  .right-column {
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .right-column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px; /* control image height if needed */
+  }
+
+  .short-text {
+    background-color: #f0e8f1;
+    padding: 1rem;
   }
 }

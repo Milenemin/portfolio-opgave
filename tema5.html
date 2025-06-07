@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
     <title>Tema5</title>
   </head>
   <body>
@@ -37,38 +38,59 @@
           </ul>
         </div>
       </section>
-      <div class="lottietext">
-        <p>
-          <strong> Lottie-files </strong>: Vi blev introduceret til LottieFiles som en måde at tilføje letvægtsanimationer til websites. Jeg lærte at bruge After-Effects og at integrere lottie-files i HTML. Jeg forstå, hvordan animationer kan
-          understøtte brugeroplevelsen ved at gøre sider mere levende.
-        </p>
-        <img src="imgs/t5lottie.svg" alt="lottie billede med blomstrer og park" />
-        <p>Her er et eksempel på Lottie-filen jeg lavede til min sandkassesite. Den blev desværre ikke afleveret til tid til gruppeprojekten.</p>
-        <p><strong>Link:</strong> https://milenemin.dk/Sandkassesite/</p>
-      </div>
-      <img src="imgs/t5bubbles3.svg" alt="3 bubbles" class="t5bubbles3" />
-      <div class="virktext">
-        <p>Figma, Adobe Illustrator & Photoshop: Vi arbejdede med at udvikle elementer såsom logo, en keyframe til footeren, og “fluorescent” grønne kanter på portræt billeder i Figma og AI. Vi redigerede billeder i Illustrator og Photoshop.</p>
-        <img src="imgs/t5gizmo.svg" alt="Gizmo billede med grønt kant" class="gizmo" />
-        <p>Her er den grønne ramme, jeg nævnte. Vi brugte den omkring portrætterne til at introducere medarbejderne.</p>
-        <img src="imgs/t5animation.svg" alt="saksanimation" class="saks" />
-        <p>Her er saks-animationen, som er placeret i footeren og tilføjer et mere dynamisk og legende design.</p>
-      </div>
-      <div class="gittext">
-        <p>
-          <strong> Git & GitHub:</strong> Arbejdet med GitHub gav mig praktisk erfaring med versionsstyring og samarbejde i kodeprojekter. Jeg lærte at oprette branches, lave commits og merge ændringer. Det gav indsigt i, hvordan professionelle
-          udviklingsmiljøer fungerer. Jeg synes dog at det var udfordrende at arbejde med og håber på at det bliver nemmere med mere erfaring.
-        </p>
-        <img src="imgs/git.svg" alt="git hub commits" />
-        <p>Her kan man se de forskellige commits, der blev lavet undervejs. Vi var lidt sene til at sætte det op via GitHub. Næste gang vil det være bedre at starte tidligere med det.</p>
-      </div>
-      <img src="imgs/t5bubbleline.svg" alt="row of bubbles" class="t5bubbleline" />
-      <div class="kkltema5">
-        <p>
-          <strong> Konklusion:</strong> Tema 5 var spændende og relevant, fordi det forenede brugerfokus, design og en virkelig virksomhedscase. Det var udfordrende at arbejde i en gruppe med lav motivation, men jeg lærte at tage ansvar og lede
-          projektet videre. Jeg arbejdede med research, wireframes, prototyper, farvevalg og GitHub-samarbejde, og fik styrket mine færdigheder inden for både indhold, struktur, ideudvikling og kodning.
-        </p>
-      </div>
+      <section class="grid-wrapper">
+        <div class="lottietext">
+          <div class="indiv-grid">
+            <p class="left-text">
+              <strong> Lottie-files </strong>: Vi blev introduceret til LottieFiles som en måde at tilføje letvægtsanimationer til websites. Jeg lærte at bruge After-Effects og at integrere lottie-files i HTML. Jeg forstå, hvordan animationer kan
+              understøtte brugeroplevelsen ved at gøre sider mere levende.
+            </p>
+            <div class="right-column">
+              <img src="imgs/t5lottie.svg" alt="lottie billede med blomstrer og park" />
+              <p>Her er et eksempel på Lottie-filen jeg lavede til min sandkassesite. Den blev desværre ikke afleveret til tid til gruppeprojekten.</p>
+              <p>Link: https://milenemin.dk/Sandkassesite/</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="imgs/t5bubbles3.svg" alt="3 bubbles" class="t5bubbles3" />
+        <div class="virktext">
+          <div class="indiv-grid">
+            <div class="left-text">
+              <p>
+                Figma, Adobe Illustrator & Photoshop: Vi arbejdede med at udvikle elementer såsom logo, en keyframe til footeren, og “fluorescent” grønne kanter på portræt billeder i Figma og AI. Vi redigerede billeder i Illustrator og Photoshop.
+              </p>
+
+              <p>Her er 2 eksempler på nogle design valg der blev taget og passer ind til frisørens øsnker.</p>
+            </div>
+            <div class="right-column">
+              <img src="imgs/t5gizmo.svg" alt="Gizmo billede med grønt kant" class="gizmo" />
+              <p>Her er den grønne ramme, jeg nævnte. Vi brugte den omkring portrætterne til at introducere medarbejderne.</p>
+              <img src="imgs/t5animation.svg" alt="saksanimation" class="saks" />
+              <p>Her er saks-animationen, som er placeret i footeren og tilføjer et mere dynamisk og legende design.</p>
+            </div>
+          </div>
+        </div>
+        <div class="gittext">
+          <div class="indiv-grid">
+            <p class="left-text">
+              <strong> Git & GitHub:</strong> Arbejdet med GitHub gav mig praktisk erfaring med versionsstyring og samarbejde i kodeprojekter. Jeg lærte at oprette branches, lave commits og merge ændringer. Det gav indsigt i, hvordan professionelle
+              udviklingsmiljøer fungerer. Jeg synes dog at det var udfordrende at arbejde med og håber på at det bliver nemmere med mere erfaring.
+            </p>
+            <div class="right-column">
+              <img src="imgs/git.svg" alt="git hub commits" />
+              <p>Her kan man se de forskellige commits, der blev lavet undervejs. Vi var lidt sene til at sætte det op via GitHub. Næste gang vil det være bedre at starte tidligere med det.</p>
+            </div>
+          </div>
+        </div>
+        <img src="imgs/t5bubbleline.svg" alt="row of bubbles" class="t5bubbleline" />
+        <div class="kkltema5">
+          <p>
+            <strong> Konklusion:</strong> Tema 5 var spændende og relevant, fordi det forenede brugerfokus, design og en virkelig virksomhedscase. Det var udfordrende at arbejde i en gruppe med lav motivation, men jeg lærte at tage ansvar og lede
+            projektet videre. Jeg arbejdede med research, wireframes, prototyper, farvevalg og GitHub-samarbejde, og fik styrket mine færdigheder inden for både indhold, struktur, ideudvikling og kodning.
+          </p>
+        </div>
+      </section>
       <img src="imgs/moont5.svg" alt="moon and link to website" />
     </main>
     <footer>

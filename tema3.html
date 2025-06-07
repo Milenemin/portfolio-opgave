@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
     <title>tema3</title>
   </head>
   <body>
@@ -38,38 +39,53 @@
           </ul>
         </div>
       </section>
-      <div class="brugertext">
-        <p>
-          <strong> Brugerhistorier & brugertyper:</strong> Jeg lærte omk. brugertyper og brugerrejser. Her skrev jeg brugerhistorier for at forstå behov og adfærd. Det hjalp mig med at træffe designvalg, som er relevante for rigtige mennesker og
-          konkrete brugssituationer. i min tilfæld var det lidt svært at bruge userstories, idet mit hjememsides mål er at dele min eget kunst.
-        </p>
-        <img src="imgs/brugertyper.svg" alt="brugertyper" />
-      </div>
-      <img src="imgs/t33bubbles.svg" alt="3 bubbles" class="bubblest3" />
-      <div class="figmatext">
-        <p>
-          <strong> Figma:</strong> Jeg brugte Figma til at udvikle wireframes og interaktive prototyper, frames og komponenter med hover-effekter. Det hjalp mig med at teste layout, farver og funktioner. Prototyper er et vigtigt forstadie til
-          kodning, idet man følger dem nøjagigt.
-        </p>
-        <img src="imgs/t3wireframe.svg" alt="" />
-        <p>Her er et eksempel på nogle interaktive prototyper, jeg lavede i Figma. Navigationsbaren blev til en komponent, hvilket gjorde det muligt at tilføje hover- og on-click-effekter.</p>
-      </div>
-      <div class="testtext">
-        <p>
-          <strong>Tests:</strong>Jeg anvendte tests som 5-sekunders test, Lyssna og Google Forms. Gennem brugernes feedback kunne jeg justere elementer for at forbedre den samlede brugeroplevelse. Til sidst brugte jeg
-          <strong> Lighthouse-test: </strong>Ved hjælp af Lighthouse testede jeg sitets performance. For at sikre hurtig indlæsning og tage hensyn til bæredygtighed konverterede jeg alle billeder til WebP-format
-        </p>
-        <img src="imgs/t3lighthouse.svg" alt="lighthouse test resultater" />
+      <section class="grid-wrapper">
+        <div class="brugertext">
+          <div class="indiv-grid">
+            <p class="left-text">
+              <strong> Brugerhistorier & brugertyper:</strong> <br />Jeg lærte omk. brugertyper og brugerrejser. Her skrev jeg brugerhistorier for at forstå behov og adfærd. Det hjalp mig med at træffe designvalg, som er relevante for rigtige
+              mennesker og konkrete brugssituationer. i min tilfæld var det lidt svært at bruge userstories, idet mit hjememsides mål er at dele min eget kunst.
+            </p>
+            <div class="right-column">
+              <img src="imgs/brugertyper.svg" alt="brugertyper" />
+              <p>Her er eksemplen på fire forskellige user stories jeg fandt på.Det hjalp mig at have dem i tankerne i løbet af designprocessen</p>
+            </div>
+          </div>
+        </div>
+        <img src="imgs/t33bubbles.svg" alt="3 bubbles" class="bubblest3" />
+        <div class="figmatext">
+          <div class="indiv-grid">
+            <p class="left-text">
+              <strong> Figma:</strong> <br />Jeg brugte Figma til at udvikle wireframes og interaktive prototyper, frames og komponenter med hover-effekter. Det hjalp mig med at teste layout, farver og funktioner. Prototyper er et vigtigt forstadie
+              til kodning, idet man følger dem nøjagigt.
+            </p>
+            <div class="right-column">
+              <img src="imgs/t3wireframe.svg" alt="" />
+              <p>Her er et eksempel på nogle interaktive prototyper, jeg lavede i Figma. Navigationsbaren blev til en komponent, hvilket gjorde det muligt at tilføje hover- og on-click-effekter.</p>
+            </div>
+          </div>
+        </div>
+        <div class="testtext">
+          <div class="indiv-grid">
+            <p class="left-text">
+              <strong>Tests:</strong><br />Jeg anvendte tests som 5-sekunders test, Lyssna og Google Forms. Gennem brugernes feedback kunne jeg justere elementer for at forbedre den samlede brugeroplevelse. Til sidst brugte jeg
+              <strong> Lighthouse-test: </strong>Ved hjælp af Lighthouse testede jeg sitets performance. For at sikre hurtig indlæsning og tage hensyn til bæredygtighed konverterede jeg alle billeder til WebP-format
+            </p>
+            <div class="right-column">
+              <img src="imgs/t3lighthouse.svg" alt="lighthouse test resultater" />
 
-        <p>Her er Lighthouse-analysen efter, at jeg har ændret alle billederne til WebP-format. Performance blev forbedret betydeligt.</p>
-      </div>
-      <img src="imgs/t3bubbleline.svg" alt="line of bubbles" class="bubblelinet3" />
-      <div class="kkltema3">
-        <p>
-          <strong>Konklusion:</strong> Dette tema var personligt og meningsfuldt. Jeg fik lov at kombinere tekniske færdigheder med min egen kreative stemme – og det var både lærerigt og motiverende. Jeg lærte, hvordan brugerfokuseret design skabes
-          gennem research, test og prototyper, og hvordan selv små UI-valg har stor betydning for oplevelsen.
-        </p>
-      </div>
+              <p>Her er Lighthouse-analysen efter, at jeg har ændret alle billederne til WebP-format. Performance blev forbedret betydeligt.</p>
+            </div>
+          </div>
+        </div>
+        <img src="imgs/t3bubbleline.svg" alt="line of bubbles" class="bubblelinet3" />
+        <div class="kkltema3">
+          <p>
+            <strong>Konklusion:</strong> Dette tema var personligt og meningsfuldt. Jeg fik lov at kombinere tekniske færdigheder med min egen kreative stemme – og det var både lærerigt og motiverende. Jeg lærte, hvordan brugerfokuseret design skabes
+            gennem research, test og prototyper, og hvordan selv små UI-valg har stor betydning for oplevelsen.
+          </p>
+        </div>
+      </section>
       <img src="imgs/moont3.svg" alt="moon and link to website" />
     </main>
     <footer>

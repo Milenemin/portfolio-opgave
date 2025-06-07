@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
     <title>Tema 2</title>
   </head>
   <body>
@@ -37,31 +38,56 @@
           </ul>
         </div>
       </section>
-
-      <div class="gestalttext">
-        <p><strong>Gestaltprincipper:</strong> Vi arbejdede med designprincipper som Nærhed, Lighed, Fælles skæbne og Lukkethed til at skabe orden og visuel balance.</p>
-        <img src="imgs/gestalt.svg" alt="navigations bar" />
-        <p>Det har jeg brugt som eksempel i navigation bar hvor der er lige afsand mellem elementerne så loven kontinuitet er holdt her. Vi har også lovene om nærhed og lighed her. Det skaber visuel klarhed.</p>
-      </div>
-      <img src="imgs/Group 21.svg" alt="three bubbles" class="bubblest2" />
-      <div class="grid">
-        <p><strong>CSS Grid: </strong> Gridsystem: Et grid opdeler layoutet i rækker og kolonner og skaber struktur. Vi brugte CSS Grid til at placere indhold i et ensartet og fleksibelt system.</p>
-        <img src="imgs/grid.svg" alt="grid css" />
-        <p>Ved hjælp af grid-systemet fik jeg billederne til at placere sig i overensstemmelse med wireframen. Det bruges primært til desktop-layouts og skaber struktur og orden i layoutet.</p>
-      </div>
-      <div class="media-queries">
-        <p><strong> Responsivt design via media Queries:</strong> Med en mobile-first tilgang brugte vi media queries til at sikre, at hjemmesiden tilpasser sig forskellige skærmstørrelser.</p>
-        <img src="imgs/mediaqu.svg" alt="billede css media queries" />
-        <p>Her kunne jeg justere alle elementer, når skærmen er bredere end 800px. Da det er et mobile-first website, brugte jeg grids for at tilpasse layoutet til større skærme.</p>
-      </div>
-      <img src="imgs/bubbleline.svg" alt="line of bubbles" />
-      <div class="kkltema2">
-        <p>
-          <strong> Konklusion:</strong> Tema 2 var mit første møde med at kode en rigtig hjemmeside. Jeg lærte ikke kun at bruge grids og CSS korrekt, men også at forstå vigtigheden af struktur, visuel balance og designprincipper som Gestaltlove. Det
-          var udfordrende, men jeg er stolt af, at jeg kom i mål og nu forstår, hvordan man opbygger et fundament for godt webdesign.
-        </p>
-      </div>
-      <img src="imgs/moont2.svg" alt="moon and link to website" />
+      <section class="grid-wrapper">
+        <div class="gestalttext">
+          <div class="indiv-grid">
+            <div class="left-text">
+              <p class="g1">
+                <strong>Gestaltprincipper:</strong><br />
+                Vi arbejdede med designprincipper som Nærhed, Lighed, Fælles skæbne og Lukkethed til at skabe orden og visuel balance.
+              </p>
+            </div>
+            <div class="right-column">
+              <img src="imgs/gestalt.svg" alt="navigations bar" />
+              <p class="g3">Det har jeg brugt som eksempel i navigation bar hvor der er lige afsand mellem elementerne så loven kontinuitet er holdt her. Vi har også lovene om nærhed og lighed her. Det skaber visuel klarhed.</p>
+            </div>
+          </div>
+        </div>
+        <img src="imgs/Group 21.svg" alt="three bubbles" class="bubblest2" />
+        <div class="grid">
+          <div class="indiv-grid">
+            <div class="left-text">
+              <p class="gridtext1">
+                <strong>CSS Grid: </strong> <br />
+                Et grid opdeler layoutet i rækker og kolonner og skaber struktur. Vi brugte CSS Grid til at placere indhold i et ensartet og fleksibelt system.
+              </p>
+            </div>
+            <div class="right-column">
+              <img src="imgs/grid.svg" alt="grid css" />
+              <p>Ved hjælp af grid-systemet fik jeg billederne til at placere sig i overensstemmelse med wireframen. Det bruges primært til desktop-layouts og skaber struktur og orden i layoutet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="media-queries">
+          <div class="indiv-grid">
+            <div class="left-text">
+              <p><strong> Responsivt design via media Queries:</strong> <br />Med en mobile-first tilgang brugte vi media queries til at sikre, at hjemmesiden tilpasser sig forskellige skærmstørrelser.</p>
+            </div>
+            <div class="right-column">
+              <img src="imgs/mediaqu.svg" alt="billede css media queries" />
+              <p>Her kunne jeg justere alle elementer, når skærmen er bredere end 800px. Da det er et mobile-first website, brugte jeg grids for at tilpasse layoutet til større skærme.</p>
+            </div>
+          </div>
+        </div>
+        <img src="imgs/bubbleline.svg" alt="line of bubbles" />
+        <div class="kkltema2">
+          <p>
+            <strong> Konklusion:</strong> Tema 2 var mit første møde med at kode en rigtig hjemmeside. Jeg lærte ikke kun at bruge grids og CSS korrekt, men også at forstå vigtigheden af struktur, visuel balance og designprincipper som Gestaltlove.
+            Det var udfordrende, men jeg er stolt af, at jeg kom i mål og nu forstår, hvordan man opbygger et fundament for godt webdesign.
+          </p>
+        </div>
+      </section>
+      <a href="https://milenemin.dk/website/"> <img src="imgs/moont2.svg" class="weblink" /></a>
     </main>
     <footer>
       <img src="imgs/footer4.svg" alt="footer med stjerner og e-mail kontakt" />
