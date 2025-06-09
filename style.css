@@ -21,8 +21,21 @@ body {
   padding: 0;
   background-color: #fffbf5;
 }
+.mobile-bg,
+.desktop-bg {
+  display: block;
+  margin: 0 auto;
+}
+* {
+  font-size: 17px;
+  line-height: 1.85rem;
+}
+main {
+  background-color: #fffbf5;
+  font-family: font1;
+  color: #404148;
+}
 .navbar {
-  display: none;
   list-style: none;
   flex-direction: column;
   justify-content: center;
@@ -34,11 +47,17 @@ body {
   background-color: #6fafeb;
   font-family: font2, sans-serif;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.6s ease;
 }
 .navbar.show {
-  display: flex;
+  max-height: 300px; /* adjust if needed */
+  opacity: 1;
 }
+
 .burger {
   font-size: 34px;
   background: none;
@@ -57,21 +76,12 @@ header {
 .navbar li a {
   text-decoration: none;
   color: #ffffff;
-  font-family: "font2", sans-serif;
+  font-family: "font1", sans-serif;
   font-size: 13px;
   background-color: #6fafeb;
   font: bold;
 }
 
-* {
-  font-size: 17px;
-  line-height: 1.85rem;
-}
-main {
-  background-color: #fffbf5;
-  font-family: font1;
-  color: #404148;
-}
 h1 {
   font-family: font1;
   text-align: center;
@@ -96,11 +106,6 @@ h3 {
   margin-top: 3.5rem;
 }
 
-.svg-img {
-  position: relative;
-  width: 200px;
-}
-
 .linkt2 {
   position: absolute;
   top: 120px;
@@ -119,9 +124,9 @@ img {
 }
 .corner-deco {
   position: absolute;
-  width: 110px; /* or % or vw */
-  top: 540px;
-  right: 310px;
+  width: 85px; /* or % or vw */
+  top: 475px;
+  right: 1055px;
   z-index: 300px;
 }
 
@@ -132,7 +137,6 @@ img {
 .i1 {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 10rem;
   margin-bottom: 2rem;
   line-height: 1.7rem;
   padding: 1.5rem;
@@ -183,9 +187,14 @@ img {
 .tema2pic1 {
   position: absolute;
   width: 60px;
-  top: 170px;
+  top: 130px;
   right: 345px;
   z-index: 300px;
+}
+.galaxy {
+  max-width: 400px;
+  margin-left: 3rem;
+  margin-top: 2rem;
 }
 
 .box1 {
@@ -212,7 +221,6 @@ img {
   width: 80px;
   display: inline-block;
   margin-left: 150px;
-  margin-bottom: -4rem;
 }
 .grid {
   border: #d1c4e5 solid 6px;
@@ -251,12 +259,12 @@ img {
   font-family: font1;
 }
 footer {
-  margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 
 .tema3pic1 {
   position: absolute;
-  width: 60px;
+  width: 49px;
   top: 103px;
   right: 355px;
   z-index: 300px;
@@ -341,8 +349,8 @@ footer {
 
 .tema4svg {
   position: absolute;
-  width: 110px;
-  top: 105px;
+  width: 105px;
+  top: 92px;
   right: 300px;
   z-index: 300px;
 }
@@ -384,20 +392,19 @@ footer {
 }
 .kklt4 {
   border: #f28f85 solid 7px;
-  background-color: #f0e8f1;
+  background-color: rgba(242, 149, 140, 0.17);
   border-radius: 23px;
+  color: #47484f;
   margin-left: 2rem;
   margin-right: 2rem;
-  color: rgba(242, 149, 140, 0.17);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-family: font1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .box1-t5 {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   border-radius: 23px;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -409,8 +416,8 @@ footer {
 .tema5pic1 {
   position: absolute;
   width: 90px;
-  top: 110px;
-  right: 320px;
+  top: 108px;
+  right: 330px;
   z-index: 300px;
 }
 
@@ -428,7 +435,6 @@ footer {
 .t5bubbles3 {
   width: 90px;
   margin-left: 150px;
-  margin-bottom: -4rem;
 }
 .virktext {
   border: #d1c4e5 solid 6px;
@@ -482,10 +488,24 @@ footer {
 
 /* DESKTOP styles */
 @media screen and (min-width: 800px) {
-  h1 {
+  .navbar li a {
+    font-size: 17px;
+  }
+  header {
+    padding: 1rem;
+  }
+  .h1 {
     font-size: 50px;
     margin-bottom: 4rem;
     margin-top: 4rem;
+  }
+
+  .planet-animation {
+    width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3rem;
   }
 
   .i1 {
@@ -501,18 +521,29 @@ footer {
   .togv {
     margin-left: 450px;
     margin-right: 500px;
+    margin-bottom: 3rem;
+  }
+  .bubbles-container {
+    display: flex;
+    gap: 1rem; /* controls spacing between each bubble */
+    align-items: center;
   }
 
-  .gridtext1 {
-    vertical-align: bottom;
-  }
-  .tema2pic1 {
+  .tema2pic1,
+  .tema3pic1,
+  .tema4svg,
+  .tema5pic1 {
     position: absolute;
-    width: 120px;
     top: 140px;
     right: 995px;
   }
-
+  .tema2pic1 {
+    width: 100px;
+  }
+  .tema4svg,
+  .tema5pic1 {
+    width: 140px;
+  }
   .kkltema2,
   .kkltema3,
   .kkltema4,
@@ -522,19 +553,29 @@ footer {
     padding: 3rem;
   }
 
-  .bubblest2 {
+  .bubblest2,
+  .bubblest3,
+  .t5bubbles3 {
     width: 150px;
     margin: auto;
   }
+  .galaxy {
+    margin-top: 4rem;
+    max-width: 750px;
+    margin: auto;
+  }
+  .weblink {
+    margin-left: 2rem;
+  }
 
   .grid-wrapper {
-    gap: 3rem;
+    gap: 2rem;
     max-width: 1100px;
     margin: auto;
   }
 
   .indiv-grid {
-    gap: 2rem;
+    gap: 1rem;
     align-items: start; /* ensures right column starts at top */
     margin: 1rem;
     padding: 1rem;
@@ -563,5 +604,28 @@ footer {
   .short-text {
     background-color: #f0e8f1;
     padding: 1rem;
+  }
+  .gizmo,
+  .saks {
+    max-width: 220px;
+  }
+  .virktext,
+  .gestalttext {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0rem;
+  }
+  .gestalttext,
+  .grid,
+  .figmatext,
+  .jstext,
+  .forms {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0rem;
   }
 }
