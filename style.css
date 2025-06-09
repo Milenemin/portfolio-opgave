@@ -146,6 +146,13 @@ img {
   text-align: center;
 }
 
+.klikher {
+  width: 80px;
+  animation: gentleTilt 1s ease-in-out infinite alternate;
+  display: block;
+  margin: auto;
+}
+
 .logocontainer {
   border: 1px solid black;
   text-align: center;
@@ -343,6 +350,7 @@ footer {
   border-radius: 23px;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-bottom: 2rem;
   border: #f28f85 solid 7px;
   background-color: rgba(242, 149, 140, 0.17);
   border-radius: 23px;
@@ -548,13 +556,12 @@ footer {
   }
   .kkltema2,
   .kkltema3,
-  .kkltema4,
+  .kklt4,
   .kkltema5 {
     max-width: 500px;
     margin: auto;
     padding: 3rem;
   }
-
   .bubblest2,
   .bubblest3,
   .t5bubbles3 {
@@ -629,5 +636,9 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 0rem;
+  }
+  .klikher {
+    width: 110px;
+    margin-top: 3.5rem;
   }
 }

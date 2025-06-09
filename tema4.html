@@ -2,6 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <style>
+      .image {
+        width: 140px;
+        animation: gentleTilt 1s ease-in-out infinite alternate;
+        display: block;
+        margin: auto;
+        transform-origin: center; /* rotate from the center */
+      }
+
+      @keyframes gentleTilt {
+        from {
+          transform: rotate(-2deg); /* slight tilt left */
+        }
+        to {
+          transform: rotate(0deg); /* slight tilt right */
+        }
+      }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="layout.css" />
@@ -82,6 +100,8 @@
           tilfreds med, at jeg gennemførte.
         </div>
       </section>
+      <a href="tema5.html"> <img src="imgs/klikher.svg" class="klikher" /></a>
+
       <a href="https://milenemin.dk/snail-attack/"> <img src="imgs/mooont4.svg" class="weblink" /></a>
     </main>
 
