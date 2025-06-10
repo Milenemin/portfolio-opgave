@@ -9,7 +9,6 @@
   position: relative;
 }
 * {
-  size: 15px;
   font-size: 15px;
 }
 .ommigbaggrund {
@@ -98,8 +97,8 @@
   position: absolute;
   top: 3350px; /* distance from top */
   left: 340px; /* distance from left */
-  width: 340px;
-  height: 340px;
+  width: 440px;
+  height: 440px;
   border-radius: 50%;
   border: 4px solid #ebd9c6;
   background-color: rgba(235, 217, 198, 0.2);
@@ -186,18 +185,21 @@
   display: none;
 }
 @media screen and (min-width: 700px) {
+  * {
+    font-size: 18px;
+  }
   .planet-circle {
     top: 240px;
     left: 350px;
-    width: 270px;
-    height: 270px;
+    width: 300px;
+    height: 300px;
   }
 
   .planet-circle2 {
     top: 770px;
     left: 500px;
-    width: 370px;
-    height: 340px;
+    width: 390px;
+    height: 370px;
   }
 
   .planet-circle3 {

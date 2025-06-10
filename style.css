@@ -21,11 +21,7 @@ body {
   padding: 0;
   background-color: #fffbf5;
 }
-.mobile-bg,
-.desktop-bg {
-  display: block;
-  margin: 0 auto;
-}
+
 * {
   font-size: 17px;
   line-height: 1.85rem;
@@ -151,6 +147,7 @@ img {
   animation: gentleTilt 1s ease-in-out infinite alternate;
   display: block;
   margin: auto;
+  margin-top: 2rem;
 }
 
 .logocontainer {
@@ -158,8 +155,8 @@ img {
   text-align: center;
   width: fit-content;
   margin: 20px auto;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   padding: 10px 20px;
 }
 
@@ -447,7 +444,7 @@ footer {
   margin-left: 150px;
 }
 .virktext {
-  border: #d1c4e5 solid 6px;
+  border: #ebd9c6 solid 6px;
   border-radius: 20px;
   margin-top: 4.5rem;
   margin-right: 1rem;
@@ -574,11 +571,12 @@ footer {
     margin: auto;
   }
   .weblink {
-    margin-left: 2rem;
+    display: block;
+    margin: auto;
   }
 
   .grid-wrapper {
-    gap: 2rem;
+    gap: 1.7rem;
     max-width: 1100px;
     margin: auto;
   }
@@ -620,7 +618,7 @@ footer {
   }
   .virktext,
   .gestalttext {
-    padding-top: 0rem;
+    padding-top: 3rem;
     padding-bottom: 0rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -638,7 +636,12 @@ footer {
     margin-top: 0rem;
   }
   .klikher {
-    width: 110px;
+    width: 100px;
     margin-top: 3.5rem;
+  }
+  .link {
+    display: block;
+    margin-left: 10px;
+    margin: auto;
   }
 }
