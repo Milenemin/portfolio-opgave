@@ -196,6 +196,13 @@ img,
   padding-right: 0.5rem;
 }
 
+.tema3pic1 {
+  position: absolute;
+  width: 35px;
+  top: 118px;
+  right: 338px;
+  z-index: 300px;
+}
 .tema2pic1 {
   position: absolute;
   width: 60px;
@@ -276,14 +283,6 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
-}
-
-.tema3pic1 {
-  position: absolute;
-  width: 37px;
-  top: 103px;
-  right: 335px;
-  z-index: 300px;
 }
 
 .box1-t3 {
@@ -509,11 +508,14 @@ footer {
     padding: 1rem;
   }
   .h1 {
-    font-size: 50px;
+    font-size: 54px;
     margin-bottom: 4rem;
     margin-top: 4rem;
   }
 
+  h2 {
+    font-size: 25px;
+  }
   .planet-animation {
     width: 800px;
     height: auto;
@@ -548,11 +550,15 @@ footer {
   .tema4svg,
   .tema5pic1 {
     position: absolute;
-    top: 140px;
+    top: 130px;
     right: 995px;
   }
   .tema2pic1 {
     width: 100px;
+  }
+
+  .tema3pic1 {
+    width: 50px;
   }
   .tema4svg,
   .tema5pic1 {
@@ -623,8 +629,7 @@ footer {
   .saks {
     max-width: 220px;
   }
-  .virktext,
-  .gestalttext {
+  .virktext {
     padding-top: 3rem;
     padding-bottom: 0rem;
     padding-left: 1rem;
@@ -636,19 +641,18 @@ footer {
   .figmatext,
   .jstext,
   .forms {
-    padding-top: 0rem;
+    padding-top: 2rem;
     padding-bottom: 0rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 0rem;
   }
   .klikher {
-    width: 100px;
+    width: 110px;
     margin-top: 3.5rem;
   }
   .link {
     display: block;
-    margin-left: 10px;
     margin: auto;
   }
 }
