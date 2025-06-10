@@ -146,7 +146,6 @@ img,
   border-radius: 23px;
   border: #c8b8e0 solid 7px;
   font-size: 18px;
-  text-align: center;
 }
 
 .klikher {
@@ -162,8 +161,8 @@ img,
   text-align: center;
   width: fit-content;
   margin: 20px auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   padding: 10px 20px;
 }
 
@@ -525,8 +524,8 @@ footer {
   .i1 {
     margin-left: 20rem;
     margin-right: 20rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
     line-height: 2rem;
     padding: 3.5rem;
     border-radius: 19px;
