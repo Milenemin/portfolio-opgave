@@ -26,9 +26,16 @@
 }
 
 .h1 {
-  margin-top: 10px;
+  margin: 10px;
 }
-
+.pretty-audio {
+  display: block;
+  margin: 2rem auto; /* centers it */
+  width: 200px;
+  border-radius: 25px;
+  background-color: #f8e8e8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .ommig2 {
   margin-right: 100px;
 }
@@ -40,8 +47,8 @@
 }
 .planet-circle {
   position: absolute;
-  top: 110px;
-  left: 70px;
+  top: 220px;
+  left: 10px;
   width: 210px;
   height: 200px;
   border-radius: 50%;
@@ -56,7 +63,7 @@
 }
 .planet-circle2 {
   position: absolute;
-  top: 380px; /* distance from top */
+  top: 500px; /* distance from top */
   left: 140px; /* distance from left */
   width: 230px;
   height: 220px;
@@ -72,7 +79,7 @@
 }
 .planet-circle3 {
   position: absolute;
-  top: 690px; /* distance from top */
+  top: 800px; /* distance from top */
   left: 30px; /* distance from left */
   width: 250px;
   height: 250px;
@@ -139,7 +146,7 @@
 
 .planet-circle4 {
   position: absolute;
-  top: 1100px;
+  top: 1150px;
   left: 40px; /* distance from left */
   width: 300px;
   height: 270px;
