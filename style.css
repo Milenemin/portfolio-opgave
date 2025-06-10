@@ -20,9 +20,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fffbf5;
-  body {
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 }
 
 * {
@@ -82,7 +80,7 @@ header {
   text-decoration: none;
   color: #ffffff;
   font-family: "font1", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   background-color: #6fafeb;
   font: bold;
 }
@@ -98,7 +96,7 @@ h1 {
 h2 {
   font-family: font2;
   text-align: center;
-  font-size: 28px;
+  font-size: 23px;
   color: #47484f;
   margin: 1.5rem;
 }
@@ -123,24 +121,16 @@ img {
   height: auto;
 }
 
-.img,
-.right-column,
-.indiv-grid {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
 .list {
   text-align: left;
   line-height: 2rem;
   font-weight: 600;
 }
-.corner-deco {
-  position: absolute;
-  width: 85px; /* or % or vw */
-  top: 475px;
-  right: 1055px;
-  z-index: 300px;
+img,
+.right-column,
+.indiv-grid {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .indexpic1 {
@@ -160,7 +150,7 @@ img {
 }
 
 .klikher {
-  width: 80px;
+  width: 90px;
   animation: gentleTilt 1s ease-in-out infinite alternate;
   display: block;
   margin: auto;
@@ -210,14 +200,14 @@ img {
 .tema2pic1 {
   position: absolute;
   width: 60px;
-  top: 130px;
-  right: 345px;
+  top: 120px;
+  right: 305px;
   z-index: 300px;
 }
 .galaxy {
   max-width: 400px;
-  margin-left: 3rem;
-  margin-top: 2rem;
+  margin: auto;
+  margin-top: 0.5rem;
 }
 
 .box1 {
@@ -233,6 +223,7 @@ img {
   border-radius: 20px;
   margin-top: 2rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   margin-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -248,7 +239,6 @@ img {
 .grid {
   border: #d1c4e5 solid 6px;
   border-radius: 20px;
-  margin-top: 4.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
   padding-top: 1rem;
@@ -281,15 +271,19 @@ img {
   padding-right: 0.5rem;
   font-family: font1;
 }
+
 footer {
-  margin-bottom: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
 .tema3pic1 {
   position: absolute;
-  width: 49px;
+  width: 37px;
   top: 103px;
-  right: 355px;
+  right: 335px;
   z-index: 300px;
 }
 
@@ -316,7 +310,6 @@ footer {
 .figmatext {
   border: #d1c4e5 solid 6px;
   border-radius: 20px;
-  margin-top: 4.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
   padding-top: 1rem;
@@ -327,7 +320,7 @@ footer {
 .testtext {
   border: #f3aaa2 solid 6px;
   border-radius: 20px;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
   padding-top: 1rem;
@@ -375,7 +368,7 @@ footer {
   position: absolute;
   width: 105px;
   top: 92px;
-  right: 300px;
+  right: 270px;
   z-index: 300px;
 }
 .illustratortext {
@@ -384,7 +377,6 @@ footer {
   margin-top: 2rem;
   margin-right: 1rem;
   margin-left: 1rem;
-  margin-bottom: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
@@ -440,8 +432,8 @@ footer {
 .tema5pic1 {
   position: absolute;
   width: 90px;
-  top: 108px;
-  right: 330px;
+  top: 98px;
+  right: 280px;
   z-index: 300px;
 }
 
@@ -463,7 +455,6 @@ footer {
 .virktext {
   border: #ebd9c6 solid 6px;
   border-radius: 20px;
-  margin-top: 4.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
   padding-top: 1rem;

@@ -4,24 +4,45 @@
 .desktop-bg {
   display: none;
 }
-
+body#ommig {
+  overflow-x: visible;
+}
+header {
+  position: relative;
+  z-index: 10;
+}
 .section-wrapper {
   position: relative;
 }
 * {
   font-size: 15px;
 }
-.ommigbaggrund {
+.background-wrapper {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
   z-index: 0;
 }
-.ommigtitel {
-  margin-top: -2.5rem;
+
+.ommigbaggrund {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: -1;
 }
+
 .content-on-top {
   position: relative;
   z-index: 1;
   padding: 60px 20px;
+  color: #27282c;
+}
+
+.ommigtitel {
+  margin-top: -2.5rem;
 }
 
 .h1 {
@@ -46,7 +67,7 @@
 }
 .planet-circle {
   position: absolute;
-  top: 180px;
+  top: 150px;
   left: 10px;
   width: 210px;
   height: 200px;
@@ -62,7 +83,7 @@
 }
 .planet-circle2 {
   position: absolute;
-  top: 460px; /* distance from top */
+  top: 430px; /* distance from top */
   left: 90px; /* distance from left */
   width: 230px;
   height: 220px;
@@ -78,7 +99,7 @@
 }
 .planet-circle3 {
   position: absolute;
-  top: 770px; /* distance from top */
+  top: 730px; /* distance from top */
   left: 30px; /* distance from left */
   width: 255px;
   height: 255px;
@@ -145,10 +166,10 @@
 
 .planet-circle4 {
   position: absolute;
-  top: 1100px;
+  top: 1050px;
   left: 40px; /* distance from left */
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 4px solid #a8ccb0;
   background-color: rgba(168, 204, 176, 0.2);
