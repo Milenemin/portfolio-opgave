@@ -20,6 +20,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fffbf5;
+  body {
+    overflow-x: hidden;
+  }
 }
 
 * {
@@ -30,6 +33,12 @@ main {
   background-color: #fffbf5;
   font-family: font1;
   color: #404148;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 }
 .navbar {
   list-style: none;
@@ -111,6 +120,14 @@ h3 {
 img {
   object-fit: cover;
   max-width: 100%;
+  height: auto;
+}
+
+.img,
+.right-column,
+.indiv-grid {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .list {

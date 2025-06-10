@@ -46,7 +46,7 @@
 }
 .planet-circle {
   position: absolute;
-  top: 220px;
+  top: 180px;
   left: 10px;
   width: 210px;
   height: 200px;
@@ -62,8 +62,8 @@
 }
 .planet-circle2 {
   position: absolute;
-  top: 500px; /* distance from top */
-  left: 140px; /* distance from left */
+  top: 460px; /* distance from top */
+  left: 90px; /* distance from left */
   width: 230px;
   height: 220px;
   border-radius: 50%;
@@ -78,10 +78,10 @@
 }
 .planet-circle3 {
   position: absolute;
-  top: 800px; /* distance from top */
+  top: 770px; /* distance from top */
   left: 30px; /* distance from left */
-  width: 250px;
-  height: 250px;
+  width: 255px;
+  height: 255px;
   border-radius: 50%;
   border: 4px solid #fcd993;
   background-color: rgba(252, 217, 147, 0.4);
@@ -145,10 +145,10 @@
 
 .planet-circle4 {
   position: absolute;
-  top: 1150px;
+  top: 1100px;
   left: 40px; /* distance from left */
-  width: 300px;
-  height: 270px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   border: 4px solid #a8ccb0;
   background-color: rgba(168, 204, 176, 0.2);
