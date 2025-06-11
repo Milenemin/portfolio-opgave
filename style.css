@@ -138,7 +138,7 @@ img,
   margin-bottom: 2rem;
   line-height: 1.7rem;
   padding: 1.5rem;
-  border-radius: 23px;
+  border-radius: 25px;
   border: #c8b8e0 solid 7px;
   font-size: 18px;
 }
@@ -535,7 +535,7 @@ footer {
     margin-bottom: 8rem;
     line-height: 2rem;
     padding: 3.5rem;
-    border-radius: 19px;
+    border-radius: 25px;
     font-size: 18px;
   }
 
