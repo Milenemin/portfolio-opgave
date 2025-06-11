@@ -32,12 +32,7 @@ main {
   font-family: font1;
   color: #404148;
 }
-@media only screen and (max-width: 600px) {
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-}
+
 .navbar {
   list-style: none;
   flex-direction: column;
@@ -148,14 +143,25 @@ img,
   font-size: 18px;
 }
 
-.klikher {
-  width: 90px;
-  animation: gentleTilt 1s ease-in-out infinite alternate;
+@keyframes Jiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.klikher2 {
+  animation: Jiggle 2s ease-in-out infinite;
   display: block;
   margin: auto;
   margin-top: 2rem;
+  width: 85px;
 }
-
 .logocontainer {
   border: 1px solid black;
   text-align: center;
@@ -493,7 +499,6 @@ footer {
   font-family: font1;
 }
 
-/* MOBILE FIRST styles */
 .togv {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -543,6 +548,10 @@ footer {
     display: flex;
     gap: 1rem; /* controls spacing between each bubble */
     align-items: center;
+  }
+
+  .klikher2 {
+    width: 110px;
   }
 
   .tema2pic1,
@@ -646,10 +655,6 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 0rem;
-  }
-  .klikher {
-    width: 110px;
-    margin-top: 3.5rem;
   }
   .link {
     display: block;
